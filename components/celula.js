@@ -3,10 +3,10 @@ const Celula = () => {
 
     return (
 
-        <>
-            <h1>Casa</h1>
+        <div>
 
-        </>
+            <h1>C</h1>
+        </div>
 
 
     )

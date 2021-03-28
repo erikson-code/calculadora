@@ -8,11 +8,11 @@ export default function Home() {
     <div className="container" style={{ height: "600px" }}>
 
 
-      <div className="d-flex flex-row justify-content-center  bg-primary mt-3" >
-        <div className="flex-column">
+      <div className="d-flex flex-row justify-content-center mt-3" >
+        <div className="col-sm-8 flex-column">
 
           <Title></Title>
-          <div>
+          <div className = "col-sm-6 bg-secondary" style = {{width:"100%",height:"450px"}}>
             <Celula></Celula>
           </div>
 
