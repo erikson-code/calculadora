@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Celula from '../components/celula'
+import Main from '../components/main'
 import Title from '../components/title'
 
 
@@ -12,8 +12,8 @@ export default function Home() {
         <div className="col-sm-6 flex-column bg-danger">
 
           <Title></Title>
-          <div className = "col-sm-12 bg-secondary" style = {{height:"450px"}}>
-            <Celula></Celula>
+          <div className = "col-sm-12 bg-white" style = {{height:"450px"}}>
+            <Main></Main>
           </div>
 
         </div>
