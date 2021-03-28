@@ -9,7 +9,7 @@ const Main = () => {
             
             <div className = "d-flex flex-wrap ">
             <Celula valor = "C" dimensao = "9" color = "info"/>
-            <Celula valor = "*" dimensao = "3" color = "warning"/>
+            <Celula valor = "x" dimensao = "3" color = "warning"/>
             <Celula valor = "7" dimensao = "3" color = "secondary"/>
             <Celula valor = "8" dimensao = "3" color = "secondary"/>
             <Celula valor = "9" dimensao = "3" color = "secondary"/>

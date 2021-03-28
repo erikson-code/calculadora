@@ -8,7 +8,7 @@ export default function Home() {
     <div className="container" style={{ height: "600px" }}>
 
 
-      <div className="d-flex flex-row justify-content-center mt-3" >
+      <div className="d-flex flex-row justify-content-center mt-5" >
         <div className="col-sm-6 flex-column bg-danger">
 
           <Title></Title>

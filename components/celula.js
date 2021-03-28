@@ -4,7 +4,7 @@ const Celula = (props) => {
     const color = "bg-"+props.color
     return (
         <div className= {dimensao}>
-        <button className = {color} style = {{width: "100%",margin:0,border:"1px solid black"}}>
+        <button className = {color} style = {{width: "100%",height:"70px",margin:0,border:"1px solid black"}}>
             <h1>{props.valor}</h1>
        
         </button>
