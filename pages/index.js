@@ -9,10 +9,10 @@ export default function Home() {
 
 
       <div className="d-flex flex-row justify-content-center mt-3" >
-        <div className="col-sm-8 flex-column">
+        <div className="col-sm-6 flex-column bg-danger">
 
           <Title></Title>
-          <div className = "col-sm-6 bg-secondary" style = {{width:"100%",height:"450px"}}>
+          <div className = "col-sm-12 bg-secondary" style = {{height:"450px"}}>
             <Celula></Celula>
           </div>
 
