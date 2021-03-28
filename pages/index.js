@@ -1,21 +1,22 @@
 import Head from 'next/head'
 import Celula from '../components/celula'
+import Title from '../components/title'
+
 
 export default function Home() {
   return (
-    <div className="container bg-warning" style={{ height: "600px" }}>
+    <div className="container" style={{ height: "600px" }}>
 
 
-      <div className="d-flex flex-row justify-content-center  bg-primary" style={{ height: "80%" }}>
+      <div className="d-flex flex-row justify-content-center  bg-primary mt-3" >
+        <div className="flex-column">
 
-        <div className="col-sm-8   bg-secondary">
-
+          <Title></Title>
+          <div>
             <Celula></Celula>
+          </div>
 
         </div>
-
-
-
 
       </div>
 
