@@ -1,13 +1,19 @@
 import Celula from '../components/celula'
 import Visor from './visor'
-import {useState} from 'react'
+import { useState } from 'react'
 
 const Main = () => {
 
-    const [valorchangeVisor,setValorchangeVisor] = useState(0)
+    const [valorchangeVisor, setValorchangeVisor] = useState(0)
 
     function changeVisor(props) {
-        setValorchangeVisor(valorchangeVisor + props)
+
+        if (props == 'C')
+            setValorchangeVisor(0)
+        else if (valorchangeVisor == '0')
+            setValorchangeVisor(props)
+        else
+            setValorchangeVisor(valorchangeVisor + props)
     }
 
     return (
@@ -32,7 +38,7 @@ const Main = () => {
                 <Celula valor="0" dimensao="6" color="secondary" onClick={() => changeVisor("0")} />
 
                 <Celula valor="." dimensao="3" color="secondary" onClick={() => changeVisor(".")} />
-                <Celula valor="=" dimensao="3" color="warning"  onClick={() => changeVisor("=")}/>
+                <Celula valor="=" dimensao="3" color="warning" onClick={() => changeVisor("=")} />
             </div>
 
 
