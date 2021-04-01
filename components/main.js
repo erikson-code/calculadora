@@ -12,7 +12,7 @@ const Main = () => {
             setValorchangeVisor(0)
         else if (props == '=') {
 
-            setValorchangeVisor(eval(valorchangeVisor))
+            setValorchangeVisor(eval(valorchangeVisor).toFixed(5))
 
         }
         else if (props == 'x')
