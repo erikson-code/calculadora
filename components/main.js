@@ -5,19 +5,24 @@ import { useState } from 'react'
 const Main = () => {
 
     const [valorchangeVisor, setValorchangeVisor] = useState(0)
-   
+
     function changeVisor(props) {
 
         if (props == 'C')
             setValorchangeVisor(0)
-        else if (props == '='){
+        else if (props == '=') {
 
             setValorchangeVisor(eval(valorchangeVisor))
-            
-        }
-        else if (valorchangeVisor == '0')
-            setValorchangeVisor(props)
 
+        }
+        else if (props == 'x')
+        setValorchangeVisor(valorchangeVisor + '*')
+        else if (valorchangeVisor == '0') {
+            if (props == ('x') || props == ('/') || props == ('+') || props == ('-'))
+                setValorchangeVisor(valorchangeVisor + props)
+            else
+                setValorchangeVisor(props)
+        }
         else
             setValorchangeVisor(valorchangeVisor + props)
     }
