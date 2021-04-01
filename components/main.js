@@ -5,13 +5,19 @@ import { useState } from 'react'
 const Main = () => {
 
     const [valorchangeVisor, setValorchangeVisor] = useState(0)
-
+   
     function changeVisor(props) {
 
         if (props == 'C')
             setValorchangeVisor(0)
+        else if (props == '='){
+
+            setValorchangeVisor(eval(valorchangeVisor))
+            
+        }
         else if (valorchangeVisor == '0')
             setValorchangeVisor(props)
+
         else
             setValorchangeVisor(valorchangeVisor + props)
     }
